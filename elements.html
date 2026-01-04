@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html><head>
+		<title>Elements - Road Trip by TEMPLATED</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/v4-shims.min.css"><style>
+  /* 方案 B：将 FA4 字体族名 FontAwesome 别名映射到 FA5 Solid 字体文件 */
+  /* 解决 TEMPLATED 等模版使用 font-family: FontAwesome 的兼容问题 */
+  @font-face {
+    font-family: 'FontAwesome';
+    font-style: normal;
+    font-weight: normal;
+    font-display: block;
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff2') format('woff2'),
+         url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/webfonts/fa-solid-900.woff') format('woff');
+  }
+
+  /* 强制覆盖常用前缀的字体，确保模版样式不干扰 */
+  .fa, .fas, .far, .fab { 
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important; 
+  }
+  .fas { font-weight: 900 !important; }
+  .far { font-weight: 400 !important; }
+
+  /* 兼容 HTML5 UP 等模版：显式将 fab/fas 映射到对应的字体族和权重 */
+  .icon.fab:before { font-family: "Font Awesome 5 Brands" !important; }
+  .icon.fas:before { font-family: "Font Awesome 5 Free" !important; font-weight: 900 !important; }
+  .icon.far:before { font-family: "Font Awesome 5 Free" !important; font-weight: 400 !important; }
+
+  /* 兼容 TEMPLATED 等模版：处理无 fa/fas/fab 前缀的 fa-xxx 类名 */
+  [class*="fa-"]:not(.fa):not(.fas):not(.far):not(.fab):not(.fad):not(.fal):before {
+    font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands" !important;
+    font-weight: 900 !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 方案 A+：TEMPLATED 模版 .icon.fa-xxx 结构的高特异性覆盖（覆盖模版本地的 FontAwesome 字体定义） */
+  /* 方向1修复：排除 .brands 和 .solid 类，避免覆盖 HTML5 UP 模版的图标样式 */
+  .icon[class*="fa-"]:not(.fa):not(.fas):not(.far):not(.fab):not(.fal):not(.fad):not(.brands):not(.solid):before {
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900 !important;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* 方案 A+：TEMPLATED 模版品牌图标专项规则（需要 Brands 字体族） */
+  .icon.fa-twitter:before, .icon.fa-facebook:before, .icon.fa-facebook-f:before,
+  .icon.fa-instagram:before, .icon.fa-linkedin:before, .icon.fa-linkedin-in:before,
+  .icon.fa-github:before, .icon.fa-github-alt:before, .icon.fa-dribbble:before,
+  .icon.fa-google-plus:before, .icon.fa-google-plus-g:before, .icon.fa-google:before,
+  .icon.fa-youtube:before, .icon.fa-vimeo:before, .icon.fa-vimeo-v:before,
+  .icon.fa-pinterest:before, .icon.fa-pinterest-p:before, .icon.fa-tumblr:before,
+  .icon.fa-snapchat:before, .icon.fa-snapchat-ghost:before, .icon.fa-whatsapp:before,
+  .icon.fa-telegram:before, .icon.fa-telegram-plane:before, .icon.fa-discord:before,
+  .icon.fa-slack:before, .icon.fa-slack-hash:before, .icon.fa-skype:before,
+  .icon.fa-reddit:before, .icon.fa-reddit-alien:before, .icon.fa-medium:before,
+  .icon.fa-behance:before, .icon.fa-deviantart:before, .icon.fa-flickr:before,
+  .icon.fa-soundcloud:before, .icon.fa-spotify:before, .icon.fa-twitch:before,
+  .icon.fa-steam:before, .icon.fa-xbox:before, .icon.fa-playstation:before,
+  .icon.fa-apple:before, .icon.fa-android:before, .icon.fa-windows:before,
+  .icon.fa-linux:before, .icon.fa-amazon:before, .icon.fa-paypal:before,
+  .icon.fa-stripe:before, .icon.fa-cc-visa:before, .icon.fa-cc-mastercard:before,
+  .icon.fa-btc:before, .icon.fa-ethereum:before, .icon.fa-weibo:before,
+  .icon.fa-weixin:before, .icon.fa-qq:before, .icon.fa-tiktok:before {
+    font-family: "Font Awesome 5 Brands" !important;
+    font-weight: 400 !important;
+  }
+</style></head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="index.html">Road Trip by TEMPLATED</a></div>
+				<a href="#menu"><span>Menu</span></a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- Main -->
+			<div id="main" class="container">
+
+				<!-- Content -->
+					<h2>Elements</h2>
+					<p>Praesent ac adipiscing ullamcorper semper ut amet ac risus. Lorem sapien ut odio odio nunc. Ac adipiscing nibh porttitor erat risus justo adipiscing adipiscing amet placerat accumsan. Vis. Faucibus odio magna tempus adipiscing a non. In mi primis arcu ut non accumsan vivamus ac blandit adipiscing adipiscing arcu metus praesent turpis eu ac lacinia nunc ac commodo gravida adipiscing eget accumsan ac nunc adipiscing adipiscing.</p>
+					<div class="row">
+						<div class="6u 12u$(small)">
+							<h3>Sem turpis amet semper</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						</div>
+						<div class="6u$ 12u$(small)">
+							<h3>Magna odio tempus commodo</h3>
+							<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor. Ante commodo blandit adipiscing integer semper orci eget. Faucibus commodo adipiscing mi eu nullam accumsan morbi arcu ornare odio mi adipiscing nascetur lacus ac interdum morbi accumsan vis mi accumsan ac praesent.</p>
+						</div>
+						<!-- Break -->
+						<div class="4u 12u$(medium)">
+							<h3>Interdum sapien gravida</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						</div>
+						<div class="4u 12u$(medium)">
+							<h3>Faucibus consequat lorem</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<h3>Accumsan montes viverra</h3>
+							<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						</div>
+					</div>
+
+				<hr class="major">
+
+				<!-- Elements -->
+					<h2 id="elements">Elements</h2>
+					<div class="row 200%">
+						<div class="6u 12u$(medium)">
+
+							<!-- Text stuff -->
+								<h3>Text</h3>
+								<p>This is<b>bold</b>and this is<strong>strong</strong>. This is<i>italic</i>and this is<em>emphasized</em>.
+								This is<sup>superscript</sup>text and this is<sub>subscript</sub>text.
+								This is<u>underlined</u>and this is code:<code>for (;;) { ... }</code>.
+								Finally, this is a<a href="#">link</a>.</p>
+								<hr>
+								<h2>Heading Level 2</h2>
+								<h3>Heading Level 3</h3>
+								<h4>Heading Level 4</h4>
+								<h5>Heading Level 5</h5>
+								<h6>Heading Level 6</h6>
+								<hr>
+								<header>
+									<h2>Heading with a Subtitle</h2>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h3>Heading with a Subtitle</h3>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+								<header>
+									<h4>Heading with a Subtitle</h4>
+									<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+								</header>
+								<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+
+							<!-- Lists -->
+								<h3>Lists</h3>
+								<div class="row">
+									<div class="6u 12u$(small)">
+
+										<h4>Unordered</h4>
+										<ul>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+
+										<h4>Alternate</h4>
+										<ul class="alt">
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Sagittis adipiscing lorem eleifend.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ul>
+
+									</div>
+									<div class="6u$ 12u$(small)">
+
+										<h4>Ordered</h4>
+										<ol>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+											<li>Dolor pulvinar etiam magna etiam.</li>
+											<li>Etiam vel felis at lorem sed viverra.</li>
+											<li>Felis enim feugiat dolore viverra.</li>
+										</ol>
+
+										<h4>Icons</h4>
+										<ul class="icons">
+											<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+											<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+											<li><a href="#" class="icon fa-tumblr"><span class="label">Tumblr</span></a></li>
+										</ul>
+
+									</div>
+								</div>
+								<h4>Definition</h4>
+								<dl>
+									<dt>Item 1</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+									<dt>Item 2</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+									<dt>Item 3</dt>
+									<dd>
+										<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+									</dd>
+								</dl>
+
+								<h4>Actions</h4>
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+									<li><a href="#" class="button alt small">Small</a></li>
+								</ul>
+								<div class="row">
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical">
+											<li><a href="#" class="button special">Default</a></li>
+											<li><a href="#" class="button">Default</a></li>
+											<li><a href="#" class="button alt">Default</a></li>
+										</ul>
+									</div>
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical small">
+											<li><a href="#" class="button special small">Small</a></li>
+											<li><a href="#" class="button small">Small</a></li>
+											<li><a href="#" class="button alt small">Small</a></li>
+										</ul>
+									</div>
+									<div class="3u 12u$(small)">
+										<ul class="actions vertical">
+											<li><a href="#" class="button special fit">Default</a></li>
+											<li><a href="#" class="button fit">Default</a></li>
+											<li><a href="#" class="button alt fit">Default</a></li>
+										</ul>
+									</div>
+									<div class="3u$ 12u$(small)">
+										<ul class="actions vertical small">
+											<li><a href="#" class="button special small fit">Small</a></li>
+											<li><a href="#" class="button small fit">Small</a></li>
+											<li><a href="#" class="button alt small fit">Small</a></li>
+										</ul>
+									</div>
+								</div>
+
+							<!-- Blockquote -->
+								<h3>Blockquote</h3>
+								<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+
+							<!-- Table -->
+								<h3>Table</h3>
+
+								<h4>Default</h4>
+								<div class="table-wrapper">
+									<table>
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td>Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+
+								<h4>Alternate</h4>
+								<div class="table-wrapper">
+									<table class="alt">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Description</th>
+												<th>Price</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Item 1</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 2</td>
+												<td>Vis ac commodo adipiscing arcu aliquet.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 3</td>
+												<td>Morbi faucibus arcu accumsan lorem.</td>
+												<td>29.99</td>
+											</tr>
+											<tr>
+												<td>Item 4</td>
+												<td>Vitae integer tempus condimentum.</td>
+												<td>19.99</td>
+											</tr>
+											<tr>
+												<td>Item 5</td>
+												<td>Ante turpis integer aliquet porttitor.</td>
+												<td>29.99</td>
+											</tr>
+										</tbody>
+										<tfoot>
+											<tr>
+												<td colspan="2"></td>
+												<td>100.00</td>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+
+						</div>
+						<div class="6u$ 12u$(medium)">
+
+							<!-- Buttons -->
+								<h3>Buttons</h3>
+								<ul class="actions">
+									<li><a href="#" class="button special">Special</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt">Alternate</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button special big">Big</a></li>
+									<li><a href="#" class="button">Default</a></li>
+									<li><a href="#" class="button alt small">Small</a></li>
+								</ul>
+								<ul class="actions fit">
+									<li><a href="#" class="button special fit">Fit</a></li>
+									<li><a href="#" class="button fit">Fit</a></li>
+									<li><a href="#" class="button alt fit">Fit</a></li>
+								</ul>
+								<ul class="actions fit small">
+									<li><a href="#" class="button special fit small">Fit + Small</a></li>
+									<li><a href="#" class="button fit small">Fit + Small</a></li>
+									<li><a href="#" class="button alt fit small">Fit + Small</a></li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#" class="button special icon fa-search">Icon</a></li>
+									<li><a href="#" class="button icon fa-download">Icon</a></li>
+									<li><a href="#" class="button alt icon fa-check">Icon</a></li>
+								</ul>
+								<ul class="actions">
+									<li><span class="button special disabled">Special</span></li>
+									<li><span class="button disabled">Default</span></li>
+									<li><span class="button alt disabled">Alternate</span></li>
+								</ul>
+
+							<!-- Form -->
+								<h3>Form</h3>
+
+								<form method="POST" action="https://formspree.io/f/PLACEHOLDER" data-form-id="roadtrip-elements" data-form-name="Low Priority" data-form-placeholder="true" data-form-ajax="true">
+									<div class="row uniform">
+										<div class="6u 12u$(xsmall)">
+											<input type="text" name="name" id="name" value="" placeholder="Name">
+										</div>
+										<div class="6u$ 12u$(xsmall)">
+											<input type="email" name="email" id="email" value="" placeholder="Email">
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<div class="select-wrapper">
+												<select name="category" id="category" data-options="[{&quot;value&quot;:&quot;{{selectOption1}}&quot;,&quot;text&quot;:&quot;{{selectOption1}}&quot;},{&quot;value&quot;:&quot;{{selectValue2}}&quot;,&quot;text&quot;:&quot;{{selectOption2}}&quot;},{&quot;value&quot;:&quot;{{selectValue3}}&quot;,&quot;text&quot;:&quot;{{selectOption3}}&quot;},{&quot;value&quot;:&quot;{{selectValue4}}&quot;,&quot;text&quot;:&quot;{{selectOption4}}&quot;},{&quot;value&quot;:&quot;{{selectValue5}}&quot;,&quot;text&quot;:&quot;{{selectOption5}}&quot;}]">
+													<option value="">- Category -</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+										</div>
+										<!-- Break -->
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-low" name="priority" checked="">
+											<label for="priority-low">Low Priority</label>
+										</div>
+										<div class="4u 12u$(small)">
+											<input type="radio" id="priority-normal" name="priority">
+											<label for="priority-normal">Normal Priority</label>
+										</div>
+										<div class="4u$ 12u$(small)">
+											<input type="radio" id="priority-high" name="priority">
+											<label for="priority-high">High Priority</label>
+										</div>
+										<!-- Break -->
+										<div class="6u 12u$(small)">
+											<input type="checkbox" id="copy" name="copy">
+											<label for="copy">Email me a copy of this message</label>
+										</div>
+										<div class="6u$ 12u$(small)">
+											<input type="checkbox" id="human" name="human" checked="">
+											<label for="human">I am a human and not a robot</label>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+										</div>
+										<!-- Break -->
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message"></li>
+												<li><input type="reset" value="Reset" class="alt"></li>
+											</ul>
+										</div>
+									</div>
+								<input type="hidden" name="_subject" value="New message from roadtrip-elements"><input type="hidden" name="_replyto" data-form-replyto="true" value=""><input type="text" name="_gotcha" autocomplete="off" tabindex="-1" style="position:absolute;left:-5000px;height:0;width:0;opacity:0;pointer-events:none;"><div class="form-status" data-form-status="idle" aria-hidden="true" data-placeholder-message="Message channel not configured. Please fill in the Formspree Endpoint." data-success-message="Thank you! Your message has been sent." data-error-message="Submission failed. Please try again later." data-submitting-message="Sending your message..." style="display: none;"></div></form>
+
+								<hr>
+
+								<form method="POST" action="https://formspree.io/f/PLACEHOLDER" data-form-id="roadtrip-elements-2" data-form-name="Form 2" data-form-placeholder="true" data-form-ajax="true">
+									<div class="row uniform">
+										<div class="9u 12u$(small)">
+											<input type="text" name="query" id="query" value="" placeholder="Query">
+										</div>
+										<div class="3u$ 12u$(small)">
+											<input type="submit" value="Search" class="fit">
+										</div>
+									</div>
+								<input type="hidden" name="_subject" value="New message from roadtrip-elements"><input type="hidden" name="_replyto" data-form-replyto="true" value=""><input type="text" name="_gotcha" autocomplete="off" tabindex="-1" style="position:absolute;left:-5000px;height:0;width:0;opacity:0;pointer-events:none;"><div class="form-status" data-form-status="idle" aria-hidden="true" data-placeholder-message="Message channel not configured. Please fill in the Formspree Endpoint." data-success-message="Thank you! Your message has been sent." data-error-message="Submission failed. Please try again later." data-submitting-message="Sending your message..." style="display: none;"></div></form>
+
+							<!-- Image -->
+								<h3>Image</h3>
+
+								<h4>Fit</h4>
+								<span class="image fit"><img src="images/pic01.jpg" alt=""></span>
+								<div class="box alt">
+									<div class="row 50% uniform">
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<!-- Break -->
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<!-- Break -->
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+										<div class="4u$"><span class="image fit"><img src="images/pic01.jpg" alt=""></span></div>
+									</div>
+								</div>
+
+								<h4>Left &amp; Right</h4>
+								<p>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+								<p>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor sit amet dolor consequat.</p>
+
+							<!-- Box -->
+								<h3>Box</h3>
+								<div class="box">
+									<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam.</p>
+								</div>
+
+							<!-- Preformatted Code -->
+								<h3>Preformatted</h3>
+								<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+
+					<h2>Contact Me</h2>
+
+					<form action="https://formspree.io/f/PLACEHOLDER" method="POST" data-form-id="roadtrip-elements-3" data-form-name="Name" data-form-placeholder="true" data-form-ajax="true">
+
+						<div class="field half first">
+							<label for="name">Name</label>
+							<input name="name" id="name" type="text" placeholder="Name">
+						</div>
+						<div class="field half">
+							<label for="email">Email</label>
+							<input name="email" id="email" type="email" placeholder="Email">
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="6" placeholder="Message"></textarea>
+						</div>
+						<ul class="actions">
+							<li><input value="Send Message" class="button alt" type="submit"></li>
+						</ul>
+					<input type="hidden" name="_subject" value="New message from roadtrip-elements"><input type="hidden" name="_replyto" data-form-replyto="true" value=""><input type="text" name="_gotcha" autocomplete="off" tabindex="-1" style="position:absolute;left:-5000px;height:0;width:0;opacity:0;pointer-events:none;"><div class="form-status" data-form-status="idle" aria-hidden="true" data-placeholder-message="Message channel not configured. Please fill in the Formspree Endpoint." data-success-message="Thank you! Your message has been sent." data-error-message="Submission failed. Please try again later." data-submitting-message="Sending your message..." style="display: none;"></div></form>
+
+					<ul class="icons">
+						<li><a href="#" class="icon round fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon round fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon round fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+					<div class="copyright">© Untitled. Design:<a href="https://templated.co">TEMPLATED</a>. Images:<a href="https://unsplash.com">Unsplash</a>.</div>
+
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	
+<script id="ss-form-placeholder-guard">(function() {
+  if (window.__SS_FORM_GUARD__) {
+    return;
+  }
+  window.__SS_FORM_GUARD__ = true;
+  var PLACEHOLDER = "https://formspree.io/f/PLACEHOLDER";
+  var DEFAULT_SUCCESS = "Thank you! Your message has been sent.";
+  var DEFAULT_ERROR = "Submission failed. Please try again later.";
+  var DEFAULT_PLACEHOLDER = "Message channel not configured. Please fill in the Formspree Endpoint.";
+  var DEFAULT_SUBMITTING = "Sending your message...";
+  var MISSING_ID_MESSAGE = '表单 data-form-id 值为空，请重新导入模板或联系支持。';
+  var EDITOR_BLOCK_MESSAGE = '编辑页仅用于配置 Formspree，请点击“预览”后在新标签页内测试表单。';
+  var REQUIRED_FIELD_MESSAGE = '请完整填写表单中的每一项（如 Name/Email/Message）后再提交。';
+
+  function getStatusElement(form) {
+    if (!form || typeof form.querySelector !== 'function') return null;
+    return form.querySelector('[data-form-status]');
+  }
+
+  function getPlaceholderMessage(statusEl) {
+    if (!statusEl) return DEFAULT_PLACEHOLDER;
+    return statusEl.getAttribute('data-placeholder-message') || statusEl.textContent || DEFAULT_PLACEHOLDER;
+  }
+
+  function getSuccessMessage(statusEl) {
+    if (!statusEl) return DEFAULT_SUCCESS;
+    return statusEl.getAttribute('data-success-message') || DEFAULT_SUCCESS;
+  }
+
+  function getErrorMessage(statusEl) {
+    if (!statusEl) return DEFAULT_ERROR;
+    return statusEl.getAttribute('data-error-message') || DEFAULT_ERROR;
+  }
+
+  function getSubmittingMessage(statusEl) {
+    if (!statusEl) return DEFAULT_SUBMITTING;
+    return statusEl.getAttribute('data-submitting-message') || DEFAULT_SUBMITTING;
+  }
+
+  function updateStatus(statusEl, message, state) {
+    if (!statusEl) return;
+    statusEl.setAttribute('data-form-status', state || 'error');
+  }
+
+  function notifyStatus(form, status, message) {
+    if (!message) return;
+    var payload = {
+      type: 'FORM_STATUS',
+      status: status,
+      formId: (form && form.getAttribute && form.getAttribute('data-form-id')) || '',
+      message: message
+    };
+    if (window.parent && window.parent !== window && typeof window.parent.postMessage === 'function') {
+      try {
+        window.parent.postMessage(payload, window.location.origin);
+        return;
+      } catch (err) {
+        /* ignore */
+      }
+    }
+    try {
+      alert(message);
+    } catch (e) {
+      /* ignore */
+    }
+  }
+
+  function isEditorContext() {
+    var attr = ''
+    try {
+      attr = (document.documentElement && document.documentElement.getAttribute('data-ss-render-context')) || ''
+    } catch (err) {
+      attr = ''
+    }
+    if (attr === 'editor') {
+      return true
+    }
+    if (attr === 'preview') {
+      return false
+    }
+    try {
+      if (window.parent && window.parent !== window) {
+        return true
+      }
+    } catch (err2) {
+      /* ignore */
+    }
+    return false
+  }
+
+  function getFieldType(field) {
+    if (!field) return ''
+    var attr = (field.getAttribute && field.getAttribute('type')) || ''
+    if (attr) return attr.toLowerCase()
+    if (typeof field.type === 'string') {
+      return field.type.toLowerCase()
+    }
+    return ''
+  }
+
+  function shouldSkipField(field) {
+    if (!field) return true
+    if (field.disabled) return true
+    var tag = (field.tagName || '').toLowerCase()
+    if (tag === 'button') return true
+    var type = getFieldType(field)
+    if (type === 'hidden' || type === 'submit' || type === 'button' || type === 'reset' || type === 'image' || type === 'file') {
+      return true
+    }
+    var name = (field.getAttribute('name') || '').toLowerCase()
+    if (name === '_gotcha') return true
+    if (field.hasAttribute && field.hasAttribute('data-form-ignore')) return true
+    return false
+  }
+
+  function fieldRequiresValue(field) {
+    if (!field) return false
+    var tag = (field.tagName || '').toLowerCase()
+    var type = getFieldType(field)
+    var defaultRequired = { text: true, email: true, tel: true, url: true, search: true, number: true, password: true }
+    if (tag === 'textarea') {
+      return true
+    }
+    if (defaultRequired[type]) {
+      return true
+    }
+    if (tag === 'select') {
+      return field.hasAttribute && field.hasAttribute('required')
+    }
+    if (type === 'checkbox' || type === 'radio') {
+      return field.hasAttribute && field.hasAttribute('required')
+    }
+    if (field.hasAttribute && (field.hasAttribute('required') || field.getAttribute('data-form-required') === 'true')) {
+      return true
+    }
+    return false
+  }
+
+  function radioGroupHasSelection(form, field) {
+    if (!field) return true
+    var name = field.getAttribute('name')
+    if (!name) {
+      return !!field.checked
+    }
+    var radios = (form && typeof form.querySelectorAll === 'function')
+      ? form.querySelectorAll('input[type="radio"]')
+      : document.querySelectorAll('input[type="radio"]')
+    for (var i = 0; i < radios.length; i++) {
+      var radio = radios[i]
+      if (!radio || radio.getAttribute('name') !== name) continue
+      if (radio.checked) {
+        return true
+      }
+    }
+    return false
+  }
+
+  function isFieldEmpty(form, field) {
+    var tag = (field.tagName || '').toLowerCase()
+    var type = (field.getAttribute('type') || '').toLowerCase()
+    if (type === 'checkbox') {
+      return !field.checked
+    }
+    if (type === 'radio') {
+      return !radioGroupHasSelection(form, field)
+    }
+    if (tag === 'select') {
+      if (field.multiple && field.options) {
+        for (var i = 0; i < field.options.length; i++) {
+          var opt = field.options[i]
+          if (opt.selected && String(opt.value || '').trim().length > 0) {
+            return false
+          }
+        }
+        return true
+      }
+      var selectValue = field.value != null ? String(field.value) : ''
+      return selectValue.trim().length === 0
+    }
+    var value = field.value != null ? String(field.value) : ''
+    return value.trim().length === 0
+  }
+
+  function getFieldLabel(form, field) {
+    if (!field) return ''
+    var direct = (field.getAttribute('data-label') ||
+      field.getAttribute('aria-label') ||
+      field.getAttribute('placeholder') ||
+      field.getAttribute('name') ||
+      field.getAttribute('id') ||
+      '').trim()
+    if (direct) {
+      return direct
+    }
+    var id = field.getAttribute('id')
+    if (id && form && typeof form.querySelectorAll === 'function') {
+      var labels = form.querySelectorAll('label[for]')
+      for (var i = 0; i < labels.length; i++) {
+        var lbl = labels[i]
+        if (lbl && lbl.getAttribute('for') === id) {
+          var text = (lbl.textContent || '').trim()
+          if (text) return text
+        }
+      }
+    }
+    if (field.closest) {
+      var wrapping = field.closest('label')
+      if (wrapping) {
+        var wrapText = (wrapping.textContent || '').trim()
+        if (wrapText) return wrapText
+      }
+    }
+    return ''
+  }
+
+  function buildMissingFieldMessage(form, field) {
+    var label = getFieldLabel(form, field)
+    if (label) {
+      return '请填写“' + label + '”后再提交表单。'
+    }
+    return REQUIRED_FIELD_MESSAGE
+  }
+
+  function validateRequiredFields(form) {
+    if (!form || typeof form.querySelectorAll !== 'function') {
+      return { valid: true }
+    }
+    var fields = form.querySelectorAll('input, textarea, select')
+    for (var i = 0; i < fields.length; i++) {
+      var field = fields[i]
+      if (shouldSkipField(field)) continue
+      if (!fieldRequiresValue(field)) continue
+      if (isFieldEmpty(form, field)) {
+        return {
+          valid: false,
+          message: buildMissingFieldMessage(form, field)
+        }
+      }
+    }
+    return { valid: true }
+  }
+
+  async function submitViaAjax(form, action, statusEl) {
+    updateStatus(statusEl, getSubmittingMessage(statusEl), 'submitting');
+    var formData = new FormData(form);
+    try {
+      var response = await fetch(action, {
+        method: (form.getAttribute('method') || 'POST').toUpperCase(),
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (response.ok) {
+        try { form.reset(); } catch (resetErr) { console.warn('[Formspree] reset failed', resetErr); }
+        var successText = getSuccessMessage(statusEl);
+        updateStatus(statusEl, successText, 'success');
+        notifyStatus(form, 'success', successText);
+        return;
+      }
+
+      var errorText = getErrorMessage(statusEl);
+      try {
+        var payload = await response.json();
+        if (payload && payload.errors && payload.errors.length) {
+          errorText = payload.errors.map(function(err) { return err.message; }).join(', ');
+        }
+      } catch (_) {
+        // ignore
+      }
+      updateStatus(statusEl, errorText, 'error');
+      notifyStatus(form, 'error', errorText);
+    } catch (err) {
+      var fallbackError = getErrorMessage(statusEl);
+      updateStatus(statusEl, fallbackError, 'error');
+      notifyStatus(form, 'error', fallbackError);
+    }
+  }
+
+  document.addEventListener('submit', function(event) {
+    var form = event.target;
+    if (!form || form.tagName !== 'FORM') {
+      return;
+    }
+    var action = (form.getAttribute('action') || '').trim();
+    var statusEl = getStatusElement(form);
+    var formId = (form.getAttribute('data-form-id') || '').trim();
+    if (!formId) {
+      event.preventDefault();
+      updateStatus(statusEl, MISSING_ID_MESSAGE, 'error');
+      notifyStatus(form, 'invalid', MISSING_ID_MESSAGE);
+      return;
+    }
+    if (!action || action.indexOf('PLACEHOLDER') !== -1) {
+      event.preventDefault();
+      var placeholderMessage = getPlaceholderMessage(statusEl);
+      updateStatus(statusEl, placeholderMessage, 'error');
+      notifyStatus(form, 'placeholder', placeholderMessage);
+      return;
+    }
+    if (isEditorContext()) {
+      event.preventDefault();
+      updateStatus(statusEl, EDITOR_BLOCK_MESSAGE, 'blocked');
+      notifyStatus(form, 'blocked', EDITOR_BLOCK_MESSAGE);
+      return;
+    }
+
+    var validation = validateRequiredFields(form);
+    if (!validation.valid) {
+      event.preventDefault();
+      var validationMessage = validation.message || REQUIRED_FIELD_MESSAGE;
+      updateStatus(statusEl, validationMessage, 'invalid');
+      notifyStatus(form, 'invalid', validationMessage);
+      return;
+    }
+
+    var emailField = form.querySelector('input[type="email"], input[data-form-email="true"]');
+    var replyField = form.querySelector('input[name="_replyto"]');
+    if (emailField && replyField) {
+      replyField.value = emailField.value || '';
+    }
+
+    if (form.getAttribute('data-form-ajax') === 'false') {
+      return;
+    }
+
+    event.preventDefault();
+    submitViaAjax(form, action, statusEl);
+  }, true);
+})();</script></body></html>
